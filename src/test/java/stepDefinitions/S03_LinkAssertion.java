@@ -20,7 +20,6 @@ public class S03_LinkAssertion extends Base {
         homePage.searchFor(searchWord);
     }
 
-
     @Then("The first result link should be {string}")
     public void The_first_result_link_should_be(String expectedHref){
         searchPage = new DuckGoSearchResultsPage();

@@ -6,11 +6,9 @@ import org.example.pages.DuckGoSearchResultsPage;
 import org.example.pages.SecondSearchPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-
 import static org.junit.Assert.assertTrue;
 
 public class S05_SecondLinkAssertion extends Base {
-
     DuckGoHomePage homePage;
     DuckGoSearchResultsPage searchPage;
     SecondSearchPage secondPage;
@@ -21,9 +19,6 @@ public class S05_SecondLinkAssertion extends Base {
 
         searchPage.secondResult();
         searchPage.clickOnSecondResult();
-
-
-
     }
     @Then("the page link should be {string}")
     public void the_page_link_should_be(String expectedLink) {

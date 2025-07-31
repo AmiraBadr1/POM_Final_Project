@@ -29,13 +29,11 @@ public class DuckGoSearchResultsPage extends Base {
         return driver.findElements(searchElements).get(3).getAttribute("text");
     }
 
-
-public WebElement secondResult(){
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-    return wait.until(ExpectedConditions.elementToBeClickable(driver.findElements(searchElements).get(1)));
+    public WebElement secondResult(){
+       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+       return wait.until(ExpectedConditions.elementToBeClickable(driver.findElements(searchElements).get(1)));
 }
-
-public void clickOnSecondResult(){
+    public void clickOnSecondResult(){
         secondResult().click();
 }
 
@@ -44,9 +42,6 @@ public void clickOnSecondResult(){
         wait.until(ExpectedConditions.visibilityOfAllElements(getSearchItemList()));
         return driver.getCurrentUrl();
     }
-
-
-
 
 }
 

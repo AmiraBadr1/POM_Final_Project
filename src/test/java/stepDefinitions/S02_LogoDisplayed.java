@@ -12,7 +12,7 @@ public class S02_LogoDisplayed extends Base {
 
     @Then("DuckDuckGo logo should be visible")
     public void duckDuckGo_logo_should_be_visible(){
-        homePage = new DuckGoHomePage(); // حل مشكلة الـ null
+        homePage = new DuckGoHomePage();
         assertTrue("DuckDuckGo logo should be visible", homePage.waitForLogoToBeClickable().isDisplayed());
     }
 

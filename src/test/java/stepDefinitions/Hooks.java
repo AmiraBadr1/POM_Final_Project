@@ -9,5 +9,4 @@ public class Hooks extends Base {
     public void quitBrowser() {
             driver.quit();
         }
-
 }

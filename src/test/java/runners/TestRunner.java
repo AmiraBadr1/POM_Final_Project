@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/resources/features",
         glue = "stepDefinitions",
+        //tags = "@lastseno",
         plugin = {"pretty", "html:target/cucumber-reports.html"},
         monochrome = true
 )

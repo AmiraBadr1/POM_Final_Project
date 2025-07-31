@@ -1,6 +1,5 @@
 Feature: 1 : 5 DuckDuckGo search
 
-
   Scenario: Verify that DuckDuckGo page title is "google"
     Given User opens "chrome" browser "https://duckduckgo.com/"
     Then the page title should be "Google"

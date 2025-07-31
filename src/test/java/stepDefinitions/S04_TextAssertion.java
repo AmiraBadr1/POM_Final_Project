@@ -8,7 +8,6 @@ import io.cucumber.java.en.Then;
 import static org.junit.Assert.assertEquals;
 
 public class S04_TextAssertion extends Base {
-
     DuckGoHomePage homePage;
     DuckGoSearchResultsPage searchPage;
 
